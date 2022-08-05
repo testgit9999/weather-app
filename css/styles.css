@@ -51,7 +51,7 @@ input {
   height: 40px;
   padding: 10px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .weather__btn {
@@ -66,5 +66,15 @@ input {
 .weather__btn:hover {
   font-weight: 500;
   color: white;
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(151, 73, 234);
+}
+
+.weather__form-block {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: rgb(255, 90, 90);
+}
+
+span {
+  display: inline;
 }
