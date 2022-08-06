@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weather-App</title>
 	<link rel="stylesheet" href="css/styles.css">
@@ -10,14 +9,18 @@
 </head>
 <body>
 	<div class="weather">
-		<h1 class="weather__required-text">Введите долготу и ширину (longitude/latitude)</h1>
+		<h1 class="weather__title">Введите долготу и ширину (longitude/latitude)</h1>
 		<form class="weather__form">
 			<input required placeholder="longitude (долгота)" type="text">
-			<div hidden class="weather__form-block">Введите число</div>
 			<input required placeholder="latitude (ширина)" type="text">
-			<div hidden class="weather__form-block">Введите число</div>
-			<button class="weather__btn" type="submit">Отправить</button>
+			<button class="weather__btn" type="submit">Проверить погоду</button>
 		</form>
+		<p hidden class="weather__form-block">Неверные координаты</p>
+		<div style="visibility:hidden" class="weather__info">
+			<h2 class="weather__info-country">USA</h2>
+			<h3 class="weather__info-city">Irvine</h3>
+			<p class="weather__info-temp">38</p>
+		</div>
 	</div>
 	<script src="script.js"></script>
 </body>
